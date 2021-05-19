@@ -16,24 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="052-26-fSG" userLabel="Green View">
-                                <rect key="frame" x="143" y="97" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bGL-qZ-Hah" userLabel="Orange View">
-                                <rect key="frame" x="143" y="278" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGL-qZ-Hah" userLabel="Orange View">
+                                <rect key="frame" x="143" y="273" width="128" height="128"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DW6-TY-4j9" userLabel="Red View">
-                                <rect key="frame" x="143" y="454" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DW6-TY-4j9" userLabel="Red View">
+                                <rect key="frame" x="143" y="478" width="128" height="128"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXj-sA-fsl">
-                                <rect key="frame" x="71" y="706" width="275" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXj-sA-fsl">
+                                <rect key="frame" x="71" y="717" width="275" height="64"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="43"/>
                                 <state key="normal" title="START">
@@ -43,9 +35,32 @@
                                     <action selector="tappedStartButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="XLo-N9-Fpc"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="052-26-fSG" userLabel="Green View">
+                                <rect key="frame" x="143" y="88" width="128" height="128"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bGL-qZ-Hah" firstAttribute="top" secondItem="052-26-fSG" secondAttribute="bottom" constant="57" id="4Kf-6F-yf8"/>
+                            <constraint firstItem="bGL-qZ-Hah" firstAttribute="height" secondItem="052-26-fSG" secondAttribute="height" id="5q0-xH-vXe"/>
+                            <constraint firstItem="052-26-fSG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="Dfq-pf-eI0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DW6-TY-4j9" secondAttribute="trailing" constant="143" id="Dmp-xP-bTr"/>
+                            <constraint firstItem="DW6-TY-4j9" firstAttribute="width" secondItem="052-26-fSG" secondAttribute="width" id="JDe-Gg-BH9"/>
+                            <constraint firstItem="DW6-TY-4j9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="MTe-w8-iSr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XXj-sA-fsl" secondAttribute="bottom" constant="81" id="SQx-0F-6tI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XXj-sA-fsl" secondAttribute="trailing" constant="68" id="WO6-Vj-peZ"/>
+                            <constraint firstItem="XXj-sA-fsl" firstAttribute="top" secondItem="DW6-TY-4j9" secondAttribute="bottom" constant="111" id="WpT-aW-kBw"/>
+                            <constraint firstItem="XXj-sA-fsl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="YPj-8I-xMf"/>
+                            <constraint firstItem="bGL-qZ-Hah" firstAttribute="width" secondItem="052-26-fSG" secondAttribute="width" id="bnN-1d-eIx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bGL-qZ-Hah" secondAttribute="trailing" constant="143" id="byd-4v-kjP"/>
+                            <constraint firstItem="DW6-TY-4j9" firstAttribute="height" secondItem="052-26-fSG" secondAttribute="height" id="cUt-K6-3hu"/>
+                            <constraint firstItem="bGL-qZ-Hah" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="knI-1f-aAU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="052-26-fSG" secondAttribute="trailing" constant="143" id="ndQ-4M-Cgg"/>
+                            <constraint firstItem="DW6-TY-4j9" firstAttribute="top" secondItem="bGL-qZ-Hah" secondAttribute="bottom" constant="77" id="wYl-eQ-Bcq"/>
+                            <constraint firstItem="052-26-fSG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="wc3-8O-Jma"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="greenLightView" destination="052-26-fSG" id="YHu-US-Zo9"/>
