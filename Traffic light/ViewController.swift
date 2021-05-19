@@ -23,15 +23,16 @@ class ViewController: UIViewController {
         case red
     }
     
+    let dark:CGFloat = 0.5
+    let bright:CGFloat = 1
     var lights:TrafficLight = .green
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
        
-        greenLightView.alpha = 0.5
-        orangeLightView.alpha = 0.5
-        redLightView.alpha = 0.5
+        greenLightView.alpha = dark
+        orangeLightView.alpha = dark
+        redLightView.alpha = dark
         
         greenLightView.layer.cornerRadius = greenLightView.frame.height / 2
         orangeLightView.layer.cornerRadius = orangeLightView.frame.height / 2
@@ -42,23 +43,22 @@ class ViewController: UIViewController {
     @IBAction func tappedStartButton() {
         startButton.setTitle("NEXT", for: .normal)
         
-        
         switch lights {
         case .green:
             lights = TrafficLight.orange
-            greenLightView.alpha = 1
-            orangeLightView.alpha = 0.5
-            redLightView.alpha = 0.5
+            greenLightView.alpha = bright
+            orangeLightView.alpha = dark
+            redLightView.alpha = dark
         case .orange:
             lights = TrafficLight.red
-            greenLightView.alpha = 0.5
-            orangeLightView.alpha = 1
-            redLightView.alpha = 0.5
+            greenLightView.alpha = dark
+            orangeLightView.alpha = bright
+            redLightView.alpha = dark
         case .red:
-                lights = TrafficLight.green
-                greenLightView.alpha = 0.5
-                orangeLightView.alpha = 0.5
-                redLightView.alpha = 1
+            lights = TrafficLight.green
+            greenLightView.alpha = dark
+            orangeLightView.alpha = dark
+            redLightView.alpha = bright
         
         }
         
