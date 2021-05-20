@@ -7,7 +7,11 @@
 
 import UIKit
 
-
+enum TrafficLight {
+    case green
+    case orange
+    case red
+}
 
 class ViewController: UIViewController {
 
@@ -16,12 +20,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var redLightView: UIView!
     
     @IBOutlet weak var startButton: UIButton!
-    
-    enum TrafficLight {
-        case green
-        case orange
-        case red
-    }
     
     let dark:CGFloat = 0.5
     let bright:CGFloat = 1
